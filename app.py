@@ -58,13 +58,7 @@ else:
         help="Get one for free at aistudio.google.com/app/apikey"
     )
 
-# 2. Model Selection Override
-selected_model = st.sidebar.selectbox(
-    "Gemini Model Version",
-    options=["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"],
-    index=0 if config.gemini_model == "gemini-1.5-flash" else 1 if config.gemini_model == "gemini-2.0-flash" else 2
-)
-config.gemini_model = selected_model
+
 
 # 3. ngrok Tunnel Controller (Optional feature to ease local deployment/Colab setup)
 st.sidebar.markdown("---")
