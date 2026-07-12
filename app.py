@@ -17,7 +17,7 @@ from src.utils.helpers import extract_json_from_text, validate_quiz_schema
 
 # Initialize Streamlit Page Configuration
 st.set_page_config(
-    page_title="AI Learning Buddy",
+    page_title="Komali - My AI Learning Buddy",
     page_icon="🎓",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -48,7 +48,7 @@ st.sidebar.markdown("<h2 style='text-align: center; color: #AA80CD;'>⚙️ Sett
 # 1. API Key Entry
 api_key_env = config.gemini_api_key
 if api_key_env:
-    st.sidebar.success("🔑 API Key loaded from .env file!")
+    st.sidebar.success("API Key loaded from .env file!")
     api_key = api_key_env
 else:
     st.sidebar.warning("⚠️ No API Key found in .env")
@@ -121,10 +121,10 @@ if api_key:
 
 # --- TAB 1: EXPLAIN CONCEPT ---
 with tab_explain:
-    st.markdown("### 💡 Understand the Concept")
+    st.markdown("### Understand the Concept")
     
     if not api_key:
-        st.warning("⚠️ Please provide a Gemini API Key in the sidebar to generate custom explanations.")
+        st.warning("Please provide a Gemini API Key in the sidebar to generate custom explanations.")
     
     render_info_box("This activity uses a prompt template that requests a simple, structured explanation utilizing analogies and clear headings.")
     
@@ -150,7 +150,7 @@ with tab_example:
     st.markdown("### 🍎 Real-Life Analogy")
     
     if not api_key:
-        st.warning("⚠️ Please provide a Gemini API Key in the sidebar to generate custom examples.")
+        st.warning("Please provide a Gemini API Key in the sidebar to generate custom examples.")
         
     render_info_box("This activity asks the AI to construct a single relatable, step-by-step real-world example to illustrate the concept.")
     
@@ -368,7 +368,7 @@ with tab_chat:
 
 # --- TAB 5: STUDENT CORNER (GRADER SECTION) ---
 with tab_student:
-    st.markdown("### 📂 Assignment Deliverables Viewer")
+    st.markdown("### Assignment Deliverables Viewer")
     st.info("💡 **Grader Notice:** This section embeds all the required assignment deliverables directly in the app for immediate evaluation, satisfying the 7 elements of the deliverables checklist.")
     
     sel_deliverable = st.selectbox(
