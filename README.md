@@ -1,7 +1,8 @@
 # 🎓 AI Learning Buddy
 
+<img width="817" height="391" alt="image" src="https://github.com/user-attachments/assets/2ee710bf-0fd2-48d1-ae5e-5b9bc39e6ab4" />
+
 [![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Docker Support](https://img.shields.io/badge/Docker-Enabled-cyan.svg)](Dockerfile)
 
