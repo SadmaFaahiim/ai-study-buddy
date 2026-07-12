@@ -1,4 +1,4 @@
-# 🎓 AI Learning Buddy
+# Komali - My AI Learning Buddy
 
 <img width="817" height="391" alt="image" src="https://github.com/user-attachments/assets/2ee710bf-0fd2-48d1-ae5e-5b9bc39e6ab4" />
 
